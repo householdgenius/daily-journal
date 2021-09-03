@@ -7,7 +7,7 @@
  */
 
 // This is the original data.
-export const journalArray = () => {}
+export const journalArray = () => { }
 const journal = [
     {
         id: 1,

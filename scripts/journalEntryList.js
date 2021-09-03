@@ -6,8 +6,7 @@
  */
 import { getJournalEntries } from "./journalData.js"
 import { JournalEntryComponent } from "./journalEntry.js"
-import { entry } from "./journalEntry.js"
-import { journalArray} from "./journalData.js";
+import { journalArray } from "./journalData.js";
 // DOM reference to where all entries will be rendered
 const entryLog = document.querySelector(".entryLog");
 
@@ -18,8 +17,8 @@ export const EntryListComponent = () => {
     let listHTMLrepresentation = "";
 
     for (const oneEntryObject of entries) {
-        listHTMLrepresentation += entry (oneEntryObject);
-        
+        listHTMLrepresentation += JournalEntryComponent(oneEntryObject);
+
     }
     entryLog.innerHTML += listHTMLrepresentation
 }
@@ -30,8 +29,8 @@ export const oneEntryComponent = () => {
     let listHTMLrepresentation = "";
 
     for (const oneEntryObject of entries) {
-        listHTMLrepresentation += entry (oneEntryObject);
-        
+        listHTMLrepresentation += entry(oneEntryObject);
+
     }
     oneLog.innerHTML += listHTMLrepresentation
 }
