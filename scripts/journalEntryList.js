@@ -34,3 +34,13 @@ export const oneEntryComponent = () => {
     }
     oneLog.innerHTML += listHTMLrepresentation
 }
+
+export const entryList = (allEntries) => {
+	let entryHTML = "";
+		//Loop over the array of posts and for each one, invoke the Post component which returns HTML representation
+		for (const entryObject of allEntries) {
+			//what is a postObject?
+			entryHTML += JournalEntryComponent(entryObject)
+		}
+		return entryHTML;
+}
