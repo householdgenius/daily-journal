@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,59 +8,54 @@
     <title>Emily's Daily Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <header>
         <section>
-            <img src="" alt="">
-         </section>
+        </section>
         <section>
             <h1>Emily's Daily Journal</h1>
         </section>
-        <h2>Daily Journal</h2>
         <section class="newPost">
-        <form action="">
-            <fieldset>
-                <label for="JournalDate">Date of entry</label>
-                <input type="date" name="journalDate" id="journalDate">
-            </fieldset>
-         </form>
-        <form action="">
-            <fieldset>
-                <label for="JournalEntry">concepts covered</label>
-                <input type="text" name="conceptsCovered" id="conceptsCovered">
-            </fieldset>
-        </form>
-        <form action="">
-            <fieldset>
-                <label for="JournalEntry">Journal Entry</label>
-                <input type="text" name="JournalEntry" id="JournalEntry">
-            </fieldset>
-        </form>
-        <form action="">
-            <fieldset>
-                <label for="moodSelector">Mood for the day</label>
-                <select name="MoodForTheDay" id="MoodForTheDay">
-                    <option value="Happy">Happy</option>
-                    <option value="JustOkay">Just Okay</option>
-                    <option value="Sad">Sad</option>
-                </select>
-            </fieldset>
-        </form>
-    </section>
+            <form action="">
+                <fieldset>
+                    <label for="JournalDate">Date of entry</label>
+                    <input type="date" name="journalDate" id="journalDate">
+                </fieldset>
+            </form>
+            <form action="">
+                <fieldset>
+                    <label for="JournalEntry">concepts covered</label>
+                    <input type="text" name="conceptsCovered" id="conceptsCovered">
+                </fieldset>
+            </form>
+            <form action="">
+                <fieldset>
+                    <label for="JournalEntry">Journal Entry</label>
+                    <input type="text" name="JournalEntry" id="JournalEntry">
+                </fieldset>
+            </form>
+            <form action="">
+                <fieldset>
+                    <label for="moodSelector">Mood for the day</label>
+                    <select name="MoodForTheDay" id="MoodForTheDay">
+                        <option value="Happy">Happy</option>
+                        <option value="JustOkay">Just Okay</option>
+                        <option value="Sad">Sad</option>
+                    </select>
+                </fieldset>
+            </form>
+        </section>
     </header>
     <main class="journal">
-        <section class="journalEntry">
-
+        <section class="journalEntry"></section>
+        <section><button id="edit">Record Journal Entry</button></section>
+        <section id="entryLog">
+            <div class="entryList"></div>
         </section>
-        <section><button>Record Journal Entry</button></section>
-        <section class="entryLog">   
-          <div class="entryList"></div>
-        </section>
-    </main>
-    <footer class="footer">
-
-    </footer>
-    
+    </main class="journal">
+    <footer class="footer"></footer>
 </body>
 <script type="module" src="./scripts/main.js"></script>
+
 </html>

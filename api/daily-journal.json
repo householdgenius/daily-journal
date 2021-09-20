@@ -1,25 +1,25 @@
 {
-  "posts": [
+  "entry": [
     {
       "id": 1,
-        "timestamp": "07/24/2025",
-        "concept": "HTML & CSS",
-        "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        "mood": "Ok"
+      "date": "09/15/2021",
+      "concept": "worked on project",
+      "entry": "My group worked on our holiday road project",
+      "mood": "just Okay"
     },
     {
       "id": 2,
-      "timestamp": "07/26/2025",
-      "concept": "Complex Flexbox",
-      "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-      "mood": "Sad"
-  },
-  {
-     "id": 3,
-      "timestamp": "08/27/2021",
-      "concept": "helper functions",
-     "entry": "we learned about helper functions today. they were a little confusing but ill get the hang of it.",
-      "mood": "ok"
-  }
+      "date": "09/16/2021",
+      "concept": "finished project",
+      "entry": "My group finished our holiday road project",
+      "mood": "just Okay"
+    },
+    {
+      "id": 3,
+      "date": "09/17/2021",
+      "concept": "Present Holiday Road",
+      "entry": "My group presented our holiday road project",
+      "mood": "just Okay"
+    }
   ]
 }

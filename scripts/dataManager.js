@@ -1,18 +1,6 @@
+export const getEntries = () => {
 
-
-let journalArray = [];
-
-export const journal = () => {
-  //Best practice: we don't want to alter the original state, so
-  //make a copy of it and then return it
-  //The spread operator makes this quick work
-  return [...journalArray];
-}
-
-
-export const getJournalEntries = () => {
-
-    return fetch("http://localhost:8088/posts")
+    return fetch("http://localhost:8088/entry")
     .then(response => response.json())
     .then(parsedResponse => {
         // do something with response here
@@ -20,14 +8,26 @@ export const getJournalEntries = () => {
     })
 }
 
-export const createPost = postObj => {
-    return fetch("http://localhost:8088/posts", {
+export const createEntry = entry => {
+    return fetch("http://localhost:8088/entry", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(postObj)
+        body: JSON.stringify(entry)
   
     })
         .then(response => response.json())
+  }
+  
+  export const deleteEntry = entryId => {
+    return fetch(`http://localhost:8088/entry/${entryId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+  
+    })
+        .then(response => response.json())
+        
   }
