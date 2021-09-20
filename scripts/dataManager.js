@@ -10,7 +10,7 @@ export const getEntries = () => {
 
 export const createEntry = entry => {
     return fetch("http://localhost:8088/entry", {
-        method: "POST",
+        method: "entry",
         headers: {
             "Content-Type": "application/json"
         },
@@ -26,6 +26,24 @@ export const createEntry = entry => {
         headers: {
             "Content-Type": "application/json"
         }
+  
+    })
+        .then(response => response.json())
+        
+  }
+
+  export const getSingleEntry = (entryId) => {
+    return fetch(`http://localhost:8088/entry/${entryId}`)
+      .then(response => response.json())
+  }
+
+  export const updateEntry = entryObj => {
+    return fetch(`http://localhost:8088/entry/${entryObj.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(entryObj)
   
     })
         .then(response => response.json())

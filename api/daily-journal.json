@@ -1,25 +1,18 @@
 {
   "entry": [
     {
-      "id": 1,
-      "date": "09/15/2021",
-      "concept": "worked on project",
-      "entry": "My group worked on our holiday road project",
-      "mood": "just Okay"
+      "date": "",
+      "concept": "",
+      "entry": "",
+      "mood": "Happy",
+      "id": 2
     },
     {
-      "id": 2,
-      "date": "09/16/2021",
-      "concept": "finished project",
-      "entry": "My group finished our holiday road project",
-      "mood": "just Okay"
-    },
-    {
-      "id": 3,
-      "date": "09/17/2021",
-      "concept": "Present Holiday Road",
-      "entry": "My group presented our holiday road project",
-      "mood": "just Okay"
+      "date": "",
+      "concept": "",
+      "entry": "",
+      "mood": "Happy",
+      "id": 3
     }
   ]
 }
